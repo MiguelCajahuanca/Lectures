@@ -1,51 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Teaching - Nombre del Profesor</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos de Física y Matemáticas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Nombre del Profesor</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#cursos">Cursos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <!-- Ajustar según tus secciones -->
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section id="introduccion">
-      <h2>Bienvenido a mi página de enseñanza</h2>
-      <p>Aquí encontrarás apuntes, lecturas recomendadas y más.</p>
+    <!-- Navegación -->
+    <header>
+        <nav>
+            <h1>Mis Cursos</h1>
+            <ul>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal -->
+    <section class="hero">
+        <h2>Bienvenidos a mi plataforma educativa</h2>
+        <p>Encuentra aquí apuntes y materiales de cursos avanzados de Física y Matemáticas.</p>
     </section>
 
+    <!-- Sección de cursos -->
     <section id="cursos">
-      <h2>Cursos</h2>
-      <article>
-        <h3>Curso 1: [Nombre del curso]</h3>
-        <p>Descripción breve del curso. Enlaces a apuntes:</p>
-        <ul>
-          <li><a href="docs/Curso1_Tema1.pdf" target="_blank">Tema 1 - Introducción</a></li>
-          <li><a href="docs/Curso1_Tema2.pdf" target="_blank">Tema 2 - Conceptos básicos</a></li>
-        </ul>
-      </article>
-      <!-- Repetir estructura de "article" para más cursos -->
+        <h2>Cursos Disponibles</h2>
+
+        <div class="cursos-container">
+
+            <!-- Curso 1 -->
+            <div class="curso-card">
+                <h3>📘 Mecánica Clásica</h3>
+                <p>Fundamentos de la dinámica, leyes de Newton y sistemas de referencia.</p>
+                <a href="docs/mecanica.pdf" class="btn" target="_blank">📄 Descargar Apuntes</a>
+            </div>
+
+            <!-- Curso 2 -->
+            <div class="curso-card">
+                <h3>📗 Electromagnetismo</h3>
+                <p>Ecuaciones de Maxwell, ondas electromagnéticas y aplicaciones.</p>
+                <a href="docs/electromagnetismo.pdf" class="btn" target="_blank">📄 Descargar Apuntes</a>
+            </div>
+
+            <!-- Curso 3 -->
+            <div class="curso-card">
+                <h3>📕 Mecánica Cuántica</h3>
+                <p>Principios fundamentales, funciones de onda y operadores cuánticos.</p>
+                <a href="docs/mecanica_cuantica.pdf" class="btn" target="_blank">📄 Descargar Apuntes</a>
+            </div>
+
+            <!-- Curso 4 -->
+            <div class="curso-card">
+                <h3>📙 Relatividad</h3>
+                <p>Teoría de la relatividad especial y general, espacio-tiempo y cosmología.</p>
+                <a href="docs/relatividad.pdf" class="btn" target="_blank">📄 Descargar Apuntes</a>
+            </div>
+
+        </div>
     </section>
 
+    <!-- Sección de contacto -->
     <section id="contacto">
-      <h2>Contacto</h2>
-      <p>Email: <a href="mailto:tuCorreo@ejemplo.com">tuCorreo@ejemplo.com</a></p>
+        <h2>Contacto</h2>
+        <p>Si tienes preguntas o sugerencias, contáctame:</p>
+        <p>Email: <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></p>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Nombre del Profesor</p>
-  </footer>
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Todos los derechos reservados | <a href="#">Mis Cursos</a></p>
+    </footer>
+
 </body>
 </html>
