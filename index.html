@@ -2,99 +2,154 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mi Sitio Personal</title>
-  <!-- Asegúrate de que "style.css" esté en la misma carpeta que este index.html -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Página Personal</title>
+  <!-- Enlaza tu hoja de estilos. Ajusta la ruta si la carpeta es diferente. -->
   <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Si quieres íconos de Font Awesome o similar, incluye su CDN aquí: 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  -->
 </head>
 <body>
-  <!-- Barra de navegación fija a la izquierda -->
-  <nav>
-    <h2 class="nav-title">Mi Nombre</h2>
-    <ul>
-      <li><a href="#sobre-mi">Sobre mí</a></li>
-      <li><a href="#publicaciones">Publicaciones</a></li>
-      <li><a href="#notas">Notas</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-      <!-- Enlace externo, por ejemplo un PDF -->
-      <li><a href="CV.pdf" target="_blank">CV</a></li>
-    </ul>
-  </nav>
 
-  <!-- Contenedor principal (contenido a la derecha de la barra) -->
-  <div class="container">
-    <!-- Título principal -->
-    <header>
-      <h1>Mi Nombre Completo</h1>
-      <p class="subheader">
-        Descripción breve o cargo, por ejemplo:
-        "Físico Teórico en X Universidad" o "Desarrollador Web en XYZ".
-      </p>
-    </header>
+  <!-- Encabezado con menú de navegación -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <!-- Coloca tu nombre o marca personal -->
+        <h1>Mi Nombre</h1>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#papers">Papers</a></li>
+          <li><a href="#teaching">Teaching</a></li>
+          <li><a href="#notes">Notes</a></li>
+          <li><a href="#writing">Writing</a></li>
+          <!-- Ejemplo de botón para modo oscuro/claro (opcional):
+          <li><a href="#" id="theme-toggle">🌙</a></li>
+          -->
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Sección "Sobre mí" -->
-    <section id="sobre-mi" class="section">
-      <h2>Sobre mí</h2>
-      <p>
-        Aquí puedes describir tu formación, intereses, proyectos en los que trabajas
-        o cualquier detalle que quieras destacar. Por ejemplo:
-      </p>
-      <ul>
-        <li>Investigador en [tema de investigación].</li>
-        <li>Desarrollo de proyectos de software/hardware.</li>
-        <li>Experiencia en lenguajes como Python, C++, etc.</li>
-      </ul>
+  <!-- Sección principal: foto y biografía a dos columnas -->
+  <main id="home" class="main-content">
+    <section class="hero-section">
+      <div class="hero-container">
+        <!-- Columna izquierda: imagen e íconos -->
+        <div class="hero-left">
+          <div class="profile-pic">
+            <!-- Usa tu propia imagen; puede estar en "assets/img/profile.jpg" -->
+            <img src="https://via.placeholder.com/200" alt="Foto de perfil">
+          </div>
+          <h2 class="hero-name">Mi Nombre Completo</h2>
+          <div class="social-icons">
+            <!-- Ejemplo de enlaces a Google Scholar, GitHub, etc. -->
+            <!-- Sustituye por tus links e íconos preferidos -->
+            <a href="#" target="_blank" aria-label="Google Scholar">
+              <!-- Ícono: G (simplificado) o Font Awesome si lo incluiste -->
+              G
+            </a>
+            <a href="#" target="_blank" aria-label="GitHub">
+              <!-- Ícono: GitHub -->
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna derecha: texto biográfico -->
+        <div class="hero-right">
+          <h3>Biografía</h3>
+          <p>
+            Soy un investigador postdoctoral en [Nombre de tu institución], 
+            centrado en [campo de estudio principal]. Mis intereses abarcan 
+            desde [tema 1] hasta [tema 2]. Me apasiona descubrir nuevas ideas 
+            en el ámbito de [tu área], y disfruto colaborando con colegas 
+            de todo el mundo.
+          </p>
+          <p>
+            Obtuve mi doctorado en [Universidad] en el año [aaaa]. 
+            Anteriormente, cursé mi máster en [Universidad], donde 
+            comencé a interesarme por [tema relevante].
+          </p>
+          <p>
+            Si deseas más información de mi trabajo, puedes consultar mi 
+            <a href="#">CV aquí</a> o escribirme a 
+            <a href="mailto:tu-correo@example.com">tu-correo@example.com</a>.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <!-- Sección "Publicaciones" -->
-    <section id="publicaciones" class="section">
-      <h2>Publicaciones Destacadas</h2>
-      <ul>
-        <li>
-          <strong>Título de la Publicación</strong> – 
-          <em>Revista / Conferencia (año)</em><br>
-          Breve descripción o enlace: <a href="#">[Enlace a la publicación]</a>
-        </li>
-        <li>
-          <strong>Título de la Publicación</strong> –
-          <em>Revista / Conferencia (año)</em><br>
-          Breve descripción o enlace: <a href="#">[Enlace a la publicación]</a>
-        </li>
-      </ul>
-      <p>
-        Puedes listar más publicaciones o enlazar a una página separada con el historial completo:
-        <br>
-        <a href="#">Ver todas las publicaciones</a>
-      </p>
+    <!-- Sección de "Papers" o "Publicaciones" -->
+    <section id="papers" class="papers-section">
+      <h2>Recent Papers</h2>
+
+      <div class="paper-card">
+        <div class="paper-meta">
+          <p><strong>A. Berlín, A. Millar, T. Trickle, Mi Nombre</strong><br>
+          Diciembre 2023 · JHEP</p>
+        </div>
+        <h3 class="paper-title">
+          Physical Signatures of [Tema del Paper]
+        </h3>
+        <p class="paper-abstract">
+          Breve resumen de los resultados, ideas clave y posibles aplicaciones.
+          Explica qué se realizó y por qué es relevante.
+        </p>
+        <div class="paper-links">
+          <a href="#">arXiv</a>
+          <a href="#">JHEP</a>
+          <a href="#">Talk slides</a>
+        </div>
+      </div>
+
+      <div class="paper-card">
+        <div class="paper-meta">
+          <p><strong>P. Schuster, N. Toro, Mi Nombre</strong><br>
+          Marzo 2023 · JHEP</p>
+        </div>
+        <h3 class="paper-title">
+          Interactions of Particles with "[Concepto Físico]"
+        </h3>
+        <p class="paper-abstract">
+          Descripción o resumen breve: qué problema aborda, la metodología 
+          y los resultados principales. 
+        </p>
+        <div class="paper-links">
+          <a href="#">arXiv</a>
+          <a href="#">JHEP</a>
+        </div>
+      </div>
+
+      <!-- Puedes añadir más paper-cards según tus publicaciones -->
     </section>
 
-    <!-- Sección "Notas" o "Blog" -->
-    <section id="notas" class="section">
-      <h2>Notas / Blog</h2>
-      <p>
-        Aquí puedes poner entradas de blog, apuntes o artículos de interés:
-      </p>
-      <ul>
-        <li>
-          <strong>Título de la Nota</strong> – 
-          <a href="#">[Enlace a la nota o artículo]</a>
-        </li>
-        <li>
-          <strong>Título de la Nota</strong> – 
-          <a href="#">[Enlace a la nota o artículo]</a>
-        </li>
-      </ul>
+    <!-- Secciones extra: Teaching, Notes, Writing, etc. -->
+    <section id="teaching" class="extra-section">
+      <h2>Teaching</h2>
+      <p>Información sobre tus cursos o clases impartidas.</p>
     </section>
 
-    <!-- Sección "Contacto" -->
-    <section id="contacto" class="section">
-      <h2>Contacto</h2>
-      <p>
-        Correo: <a href="mailto:tu-correo@ejemplo.com">tu-correo@ejemplo.com</a><br>
-        GitHub: <a href="https://github.com/tuusuario" target="_blank">@tuusuario</a><br>
-        Twitter: <a href="https://twitter.com/tuusuario" target="_blank">@tuusuario</a>
-      </p>
+    <section id="notes" class="extra-section">
+      <h2>Notes</h2>
+      <p>Artículos, blog personal, apuntes…</p>
     </section>
-  </div>
+
+    <section id="writing" class="extra-section">
+      <h2>Writing</h2>
+      <p>Ensayos o publicaciones no académicas.</p>
+    </section>
+  </main>
+
+  <!-- Pie de página (opcional) -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Mi Nombre</p>
+  </footer>
+
+  <!-- Si agregaste un toggle para modo oscuro, puedes implementar JavaScript aquí -->
+  <!-- <script src="assets/js/main.js"></script> -->
 </body>
 </html>
