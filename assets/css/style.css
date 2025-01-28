@@ -1,45 +1,52 @@
-/* Estilos básicos para mejorar la apariencia del sitio */
+/* assets/css/style.css */
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
 }
 
-h1 {
-    color: #333;
-    font-size: 2.5em;
-    margin-top: 20px;
+header, footer {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
 }
 
-p {
-    font-size: 1.2em;
-    color: #666;
+nav ul {
+  list-style: none;
+  padding: 0;
 }
 
-nav {
-    background: #333;
-    padding: 10px;
+nav li {
+  display: inline-block;
+  margin: 0 1rem;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: inline-block;
+  color: #fff;
+  text-decoration: none;
 }
 
-nav a:hover {
-    background: #555;
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  background: #fff;
+  border-radius: 5px;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+h1, h2, h3 {
+  font-weight: normal;
 }
+
+section {
+  margin: 2rem 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Ajusta más estilos según tus preferencias */
