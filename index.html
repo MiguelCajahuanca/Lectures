@@ -1,20 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página en GitHub Pages</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teaching - Nombre del Profesor</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+  <header>
+    <h1>Nombre del Profesor</h1>
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Cursos</a>
-        <a href="#">Contacto</a>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <!-- Ajustar según tus secciones -->
+      </ul>
     </nav>
-    <div class="container">
-        <h1>¡Hola, mundo!</h1>
-        <p>Este es mi primer sitio web en GitHub Pages.</p>
-    </div>
+  </header>
+
+  <main>
+    <section id="introduccion">
+      <h2>Bienvenido a mi página de enseñanza</h2>
+      <p>Aquí encontrarás apuntes, lecturas recomendadas y más.</p>
+    </section>
+
+    <section id="cursos">
+      <h2>Cursos</h2>
+      <article>
+        <h3>Curso 1: [Nombre del curso]</h3>
+        <p>Descripción breve del curso. Enlaces a apuntes:</p>
+        <ul>
+          <li><a href="docs/Curso1_Tema1.pdf" target="_blank">Tema 1 - Introducción</a></li>
+          <li><a href="docs/Curso1_Tema2.pdf" target="_blank">Tema 2 - Conceptos básicos</a></li>
+        </ul>
+      </article>
+      <!-- Repetir estructura de "article" para más cursos -->
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Email: <a href="mailto:tuCorreo@ejemplo.com">tuCorreo@ejemplo.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Nombre del Profesor</p>
+  </footer>
 </body>
 </html>
