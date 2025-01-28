@@ -1,104 +1,183 @@
-/* Reinicio básico de estilos */
+/* Reinicio básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Cuerpo principal */
 body {
-  background-color: #111;  /* Fondo oscuro similar a knzhou.github.io */
-  color: #eee;            /* Texto en gris claro */
   font-family: "Helvetica", "Arial", sans-serif;
+  background-color: #fff; /* Fondo blanco */
+  color: #333;            /* Texto gris oscuro */
+  line-height: 1.6;
 }
 
-/* Barra de navegación fija a la izquierda */
-nav {
+/* Encabezado y menú de navegación */
+.site-header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
   position: fixed;
+  width: 100%;
   top: 0;
-  left: 0;
-  width: 220px;
-  height: 100vh; /* Toma toda la altura de la ventana */
-  background-color: #111;
-  padding: 20px;
+  z-index: 999;
 }
 
-/* Título dentro del nav */
-.nav-title {
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  color: #000;
+}
+
+/* Espacio superior para que el contenido no quede debajo del header fijo */
+.main-content {
+  padding-top: 80px; /* Ajustar según la altura del header */
+}
+
+/* Sección principal (hero) */
+.hero-section {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Columna izquierda: imagen, nombre, íconos */
+.hero-left {
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.profile-pic img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
   margin-bottom: 1rem;
+}
+
+.hero-name {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #777;
+  margin: 0 0.5rem;
   font-size: 1.2rem;
-  color: #eee;
+}
+.social-icons a:hover {
+  color: #000;
 }
 
-/* Lista de navegación */
-nav ul {
-  list-style-type: none;
+/* Columna derecha: biografía */
+.hero-right {
+  flex: 1 1 400px;
 }
 
-nav li {
-  margin: 10px 0;
+/* Sección de Papers */
+.papers-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
-nav a {
-  color: #eee;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #bbb; /* Efecto hover */
-}
-
-/* Contenedor principal (margen para no chocar con el nav) */
-.container {
-  margin-left: 240px; /* Debe ser un poco más que el ancho del nav */
-  padding: 20px;
-  max-width: 800px;   /* Ancho máximo para el texto */
-}
-
-/* Título principal */
-h1 {
-  font-size: 3em;
-  margin-bottom: 0.2em;
-}
-
-.subheader {
-  font-size: 1.2em;
-  color: #bbb;
-  margin-bottom: 1em;
-}
-
-/* Secciones */
-.section {
-  margin-bottom: 2em;
-}
-
-/* Encabezados de secciones */
-h2 {
-  font-size: 1.8em;
-  margin-bottom: 0.5em;
-  color: #fff;
-}
-
-/* Estilos para enlaces */
-a {
-  color: #3AF;  /* Tono azulado */
-  text-decoration: none;
-}
-
-a:hover {
-  color: #7BF;  /* Color más claro al pasar el ratón */
-}
-
-/* Listas */
-ul {
-  margin-left: 1.5rem;
-  margin-top: 1rem;
-  line-height: 1.6;
-}
-
-/* Ajuste de párrafos */
-p {
+.papers-section h2 {
+  font-size: 2rem;
   margin-bottom: 1rem;
-  line-height: 1.6;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.paper-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.paper-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.paper-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.paper-abstract {
+  margin-bottom: 0.5rem;
+}
+
+.paper-links a {
+  display: inline-block;
+  margin-right: 0.5rem;
+  background-color: #eee;
+  color: #333;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.paper-links a:hover {
+  background-color: #ddd;
+}
+
+/* Secciones extra */
+.extra-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.extra-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  color: #888;
+  background-color: #fafafa;
+  border-top: 1px solid #ddd;
 }
