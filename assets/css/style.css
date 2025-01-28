@@ -1,192 +1,96 @@
-/* Reinicio básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Tipografías */
+/* Estilos Base */
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #fafafa;
-  color: #333;
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-/* Encabezados con fuente distinta (Merriweather) */
-h1, h2, h3 {
-  font-family: 'Merriweather', serif;
-}
-
-/* Header del sitio */
-.site-header {
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-}
-
-.header-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.brand h1 {
-  font-size: 1.6rem;
-  margin-bottom: 0.2rem;
-}
-
-.brand p {
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* Menú de navegación */
-.main-nav ul {
+/* Navegación Principal */
+nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+  background-color: #333;
+  padding: 0;
+  margin: 0;
 }
 
-.main-nav a {
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 1rem;
+  color: #fff;
   text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  padding: 0.25rem 0.5rem;
-  transition: background-color 0.2s;
 }
 
-.main-nav a:hover {
-  background-color: #f0f0f0;
-  border-radius: 4px;
+nav ul li a:hover {
+  background-color: #555;
 }
 
-/* Ajuste para que el contenido no se tape con el header fijo */
-main {
-  margin-top: 80px; 
-}
-
-/* Sección de inicio (hero) */
-.hero-section {
+/* Secciones de Capítulos */
+.chapter {
   background-color: #fff;
-  padding: 2rem 1rem;
-}
-
-.hero-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.hero-image img {
-  max-width: 250px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.hero-text {
-  flex: 1;
-}
-
-.hero-text h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-/* Sección "Sobre mí" */
-.about-section {
-  max-width: 1200px;
   margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-.about-section h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 0.5rem;
-}
-
-/* Sección "Publicaciones" */
-.publications-section {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-.publications-section h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 0.5rem;
-}
-
-/* Tarjeta de paper */
-.paper-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  margin-bottom: 1.5rem;
   padding: 1rem;
+  border-radius: 8px;
+  max-width: 800px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.paper-title {
-  font-size: 1.2rem;
-  margin-bottom: 0.3rem;
-}
-
-.paper-authors {
-  font-size: 0.9rem;
-  color: #555;
-}
-
-.paper-summary {
-  margin-top: 0.5rem;
-  color: #444;
-}
-
-/* Sección "Docencia" */
-.teaching-section {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-.teaching-section h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 0.5rem;
-}
-
-/* Sección "Contacto" */
-.contact-section {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-.contact-section h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 0.5rem;
-}
-
-/* Pie de página */
-.site-footer {
+.chapter h2 {
   text-align: center;
-  background-color: #f8f8f8;
-  color: #666;
-  border-top: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+/* Acordeón */
+.accordion {
+  margin-bottom: 1rem;
+}
+
+.accordion-header {
+  background-color: #eee;
+  padding: 0.75rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #ddd;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding-left: 1rem;
+}
+
+.accordion-content.expanded {
+  max-height: 500px; /* Ajusta según el contenido */
+}
+
+.accordion-content ul {
+  list-style: disc;
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.accordion-content ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Pie de Página */
+footer {
+  text-align: center;
   padding: 1rem;
+  background-color: #333;
+  color: #fff;
   margin-top: 2rem;
 }
