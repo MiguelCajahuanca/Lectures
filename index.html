@@ -3,153 +3,170 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Página Personal</title>
-  <!-- Enlaza tu hoja de estilos. Ajusta la ruta si la carpeta es diferente. -->
+  <title>Mi Página Académica</title>
+
+  <!-- Google Fonts: Ejemplo con Merriweather (títulos) y Open Sans (cuerpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" 
+    rel="stylesheet">
+
+  <!-- Vincular con tu hoja de estilos: Ajusta la ruta si es diferente -->
   <link rel="stylesheet" href="assets/css/style.css" />
-  <!-- Si quieres íconos de Font Awesome o similar, incluye su CDN aquí: 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  -->
 </head>
 <body>
 
-  <!-- Encabezado con menú de navegación -->
+  <!-- Encabezado fijo con menú de navegación -->
   <header class="site-header">
     <div class="header-container">
-      <div class="logo">
-        <!-- Coloca tu nombre o marca personal -->
+      <!-- Nombre / Logo -->
+      <div class="brand">
         <h1>Mi Nombre</h1>
+        <p class="affiliation">Investigador en XYZ Universidad</p>
       </div>
+
+      <!-- Navegación principal -->
       <nav class="main-nav">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#papers">Papers</a></li>
-          <li><a href="#teaching">Teaching</a></li>
-          <li><a href="#notes">Notes</a></li>
-          <li><a href="#writing">Writing</a></li>
-          <!-- Ejemplo de botón para modo oscuro/claro (opcional):
-          <li><a href="#" id="theme-toggle">🌙</a></li>
-          -->
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#publicaciones">Publicaciones</a></li>
+          <li><a href="#docencia">Docencia</a></li>
+          <li><a href="#notas">Notas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Sección principal: foto y biografía a dos columnas -->
-  <main id="home" class="main-content">
+  <!-- Contenido principal -->
+  <main id="inicio" class="main-content">
+    <!-- Hero / Presentación -->
     <section class="hero-section">
       <div class="hero-container">
-        <!-- Columna izquierda: imagen e íconos -->
-        <div class="hero-left">
-          <div class="profile-pic">
-            <!-- Usa tu propia imagen; puede estar en "assets/img/profile.jpg" -->
-            <img src="https://via.placeholder.com/200" alt="Foto de perfil">
-          </div>
-          <h2 class="hero-name">Mi Nombre Completo</h2>
-          <div class="social-icons">
-            <!-- Ejemplo de enlaces a Google Scholar, GitHub, etc. -->
-            <!-- Sustituye por tus links e íconos preferidos -->
-            <a href="#" target="_blank" aria-label="Google Scholar">
-              <!-- Ícono: G (simplificado) o Font Awesome si lo incluiste -->
-              G
-            </a>
-            <a href="#" target="_blank" aria-label="GitHub">
-              <!-- Ícono: GitHub -->
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
+        <!-- Imagen a la izquierda -->
+        <div class="hero-image">
+          <!-- Ajusta la ruta a tu foto -->
+          <img src="https://via.placeholder.com/250" alt="Foto de perfil" />
         </div>
-
-        <!-- Columna derecha: texto biográfico -->
-        <div class="hero-right">
-          <h3>Biografía</h3>
+        <!-- Texto a la derecha -->
+        <div class="hero-text">
+          <h2>Bienvenido(a) a mi página</h2>
           <p>
-            Soy un investigador postdoctoral en [Nombre de tu institución], 
-            centrado en [campo de estudio principal]. Mis intereses abarcan 
-            desde [tema 1] hasta [tema 2]. Me apasiona descubrir nuevas ideas 
-            en el ámbito de [tu área], y disfruto colaborando con colegas 
-            de todo el mundo.
+            Soy un investigador en el área de [Tu Especialidad].  
+            Actualmente, mis intereses abarcan desde [Tema 1] hasta [Tema 2].  
+            Me apasiona la docencia, la divulgación científica y colaborar 
+            en proyectos multidisciplinarios.
           </p>
           <p>
-            Obtuve mi doctorado en [Universidad] en el año [aaaa]. 
-            Anteriormente, cursé mi máster en [Universidad], donde 
-            comencé a interesarme por [tema relevante].
-          </p>
-          <p>
-            Si deseas más información de mi trabajo, puedes consultar mi 
-            <a href="#">CV aquí</a> o escribirme a 
-            <a href="mailto:tu-correo@example.com">tu-correo@example.com</a>.
+            En esta página encontrarás mis publicaciones recientes, 
+            materiales de docencia, apuntes e información de contacto.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Sección de "Papers" o "Publicaciones" -->
-    <section id="papers" class="papers-section">
-      <h2>Recent Papers</h2>
+    <!-- Sección de Publicaciones con funcionalidad dinámica (mostrar/ocultar resumen) -->
+    <section id="publicaciones" class="publications-section">
+      <h2>Publicaciones Recientes</h2>
 
-      <div class="paper-card">
-        <div class="paper-meta">
-          <p><strong>A. Berlín, A. Millar, T. Trickle, Mi Nombre</strong><br>
-          Diciembre 2023 · JHEP</p>
+      <!-- Ejemplo de un paper -->
+      <article class="paper-card">
+        <div class="paper-header">
+          <h3 class="paper-title">Título de la Publicación 1</h3>
+          <p class="paper-authors">
+            <strong>Aut@r 1, Aut@r 2, Mi Nombre</strong><br>
+            <em>Revista / Conferencia (Año)</em>
+          </p>
         </div>
-        <h3 class="paper-title">
-          Physical Signatures of [Tema del Paper]
-        </h3>
-        <p class="paper-abstract">
-          Breve resumen de los resultados, ideas clave y posibles aplicaciones.
-          Explica qué se realizó y por qué es relevante.
-        </p>
         <div class="paper-links">
-          <a href="#">arXiv</a>
-          <a href="#">JHEP</a>
-          <a href="#">Talk slides</a>
+          <a href="#" class="paper-link">arXiv</a>
+          <a href="#" class="paper-link">DOI</a>
         </div>
-      </div>
+        <!-- Resumen ocultable -->
+        <div class="paper-abstract hidden">
+          <p>
+            Aquí va un breve resumen del contenido de la publicación, indicando 
+            la motivación, la metodología y los principales resultados.
+          </p>
+        </div>
+        <button class="toggle-abstract-btn">Ver Resumen</button>
+      </article>
 
-      <div class="paper-card">
-        <div class="paper-meta">
-          <p><strong>P. Schuster, N. Toro, Mi Nombre</strong><br>
-          Marzo 2023 · JHEP</p>
+      <!-- Repite con más artículos -->
+      <article class="paper-card">
+        <div class="paper-header">
+          <h3 class="paper-title">Título de la Publicación 2</h3>
+          <p class="paper-authors">
+            <strong>Aut@r 1, Mi Nombre</strong><br>
+            <em>Revista (Año)</em>
+          </p>
         </div>
-        <h3 class="paper-title">
-          Interactions of Particles with "[Concepto Físico]"
-        </h3>
-        <p class="paper-abstract">
-          Descripción o resumen breve: qué problema aborda, la metodología 
-          y los resultados principales. 
-        </p>
         <div class="paper-links">
-          <a href="#">arXiv</a>
-          <a href="#">JHEP</a>
+          <a href="#" class="paper-link">arXiv</a>
+          <a href="#" class="paper-link">DOI</a>
         </div>
-      </div>
-
-      <!-- Puedes añadir más paper-cards según tus publicaciones -->
+        <div class="paper-abstract hidden">
+          <p>
+            Segundo ejemplo de resumen. Lorem ipsum dolor sit amet, consectetur 
+            adipiscing elit.
+          </p>
+        </div>
+        <button class="toggle-abstract-btn">Ver Resumen</button>
+      </article>
     </section>
 
-    <!-- Secciones extra: Teaching, Notes, Writing, etc. -->
-    <section id="teaching" class="extra-section">
-      <h2>Teaching</h2>
-      <p>Información sobre tus cursos o clases impartidas.</p>
+    <!-- Sección Docencia -->
+    <section id="docencia" class="teaching-section">
+      <h2>Docencia</h2>
+      <p>
+        Aquí puedes incluir información sobre los cursos que impartes, 
+        enlaces a materiales de clase, calendarios, etc.
+      </p>
     </section>
 
-    <section id="notes" class="extra-section">
-      <h2>Notes</h2>
-      <p>Artículos, blog personal, apuntes…</p>
+    <!-- Sección Notas / Blog -->
+    <section id="notas" class="notes-section">
+      <h2>Notas / Blog</h2>
+      <p>
+        Comparte apuntes, reflexiones o artículos divulgativos. 
+        Puedes enlazar posts en Markdown, repositorios o directamente 
+        escribir aquí.
+      </p>
     </section>
 
-    <section id="writing" class="extra-section">
-      <h2>Writing</h2>
-      <p>Ensayos o publicaciones no académicas.</p>
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact-section">
+      <h2>Contacto</h2>
+      <p>
+        Correo: <a href="mailto:tu-correo@example.com">tu-correo@example.com</a><br>
+        GitHub: <a href="https://github.com/tuusuario">@tuusuario</a><br>
+        Google Scholar: <a href="#">Enlace a mi perfil</a>
+      </p>
     </section>
   </main>
 
-  <!-- Pie de página (opcional) -->
+  <!-- Pie de página -->
   <footer class="site-footer">
-    <p>&copy; 2025 Mi Nombre</p>
+    <p>&copy; 2025 Mi Nombre. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- Si agregaste un toggle para modo oscuro, puedes implementar JavaScript aquí -->
-  <!-- <script src="assets/js/main.js"></script> -->
+  <!-- Script para mostrar/ocultar el resumen de cada paper -->
+  <script>
+    const buttons = document.querySelectorAll('.toggle-abstract-btn');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Selecciona el elemento hermano que tenga la clase .paper-abstract
+        const paperAbstract = btn.parentElement.querySelector('.paper-abstract');
+        // Alterna la clase 'hidden'
+        paperAbstract.classList.toggle('hidden');
+        // Cambia el texto del botón
+        btn.textContent = paperAbstract.classList.contains('hidden') 
+          ? 'Ver Resumen' 
+          : 'Ocultar Resumen';
+      });
+    });
+  </script>
 </body>
 </html>
