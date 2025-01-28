@@ -1,123 +1,104 @@
-/* General */
+/* Reinicio básico de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cuerpo principal */
 body {
-    font-family: "Lora", serif;
-    color: #333;
-    background: #f8f9fa;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    line-height: 1.7;
+  background-color: #111;  /* Fondo oscuro similar a knzhou.github.io */
+  color: #eee;            /* Texto en gris claro */
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
-/* Navegación superior */
+/* Barra de navegación fija a la izquierda */
 nav {
-    background: #2c3e50;
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh; /* Toma toda la altura de la ventana */
+  background-color: #111;
+  padding: 20px;
 }
 
+/* Título dentro del nav */
+.nav-title {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #eee;
+}
+
+/* Lista de navegación */
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+  list-style-type: none;
 }
 
-nav ul li {
-    margin: 0 15px;
+nav li {
+  margin: 10px 0;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    transition: 0.3s;
+nav a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: #f1c40f;
+nav a:hover {
+  color: #bbb; /* Efecto hover */
 }
 
-/* Encabezado */
-header {
-    margin-top: 80px;
-    padding: 40px;
+/* Contenedor principal (margen para no chocar con el nav) */
+.container {
+  margin-left: 240px; /* Debe ser un poco más que el ancho del nav */
+  padding: 20px;
+  max-width: 800px;   /* Ancho máximo para el texto */
 }
 
+/* Título principal */
 h1 {
-    font-size: 3em;
-    font-weight: normal;
+  font-size: 3em;
+  margin-bottom: 0.2em;
 }
 
-header p {
-    font-size: 1.3em;
-    color: #777;
+.subheader {
+  font-size: 1.2em;
+  color: #bbb;
+  margin-bottom: 1em;
 }
 
-/* Sección principal */
-section {
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+/* Secciones */
+.section {
+  margin-bottom: 2em;
 }
 
-/* Tablas */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+/* Encabezados de secciones */
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+  color: #fff;
 }
 
-th, td {
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
+/* Estilos para enlaces */
+a {
+  color: #3AF;  /* Tono azulado */
+  text-decoration: none;
 }
 
-th {
-    background: #2c3e50;
-    color: white;
+a:hover {
+  color: #7BF;  /* Color más claro al pasar el ratón */
 }
 
-td a {
-    color: #0077cc;
-    text-decoration: none;
-    font-weight: bold;
+/* Listas */
+ul {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  line-height: 1.6;
 }
 
-td a:hover {
-    text-decoration: underline;
-}
-
-/* Sección de contacto */
-#contacto {
-    background: #f4f4f4;
-    padding: 30px;
-    border-radius: 10px;
-}
-
-#contacto a {
-    color: #0077cc;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#contacto a:hover {
-    color: #0056b3;
-}
-
-/* Pie de página */
-footer {
-    margin-top: 40px;
-    padding: 15px;
-    background: #2c3e50;
-    color: white;
-    font-size: 0.9em;
+/* Ajuste de párrafos */
+p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
 }
