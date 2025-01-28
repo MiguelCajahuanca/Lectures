@@ -1,52 +1,156 @@
-/* assets/css/style.css */
-
+/* Estilos Generales */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f9f9f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
 }
 
-header, footer {
-  background: #333;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
+/* Barra de navegación */
+header {
+    background: #2c3e50;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+nav h1 {
+    color: white;
+    font-size: 1.5em;
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-nav li {
-  display: inline-block;
-  margin: 0 1rem;
+nav ul li {
+    margin: 0 15px;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    transition: 0.3s;
 }
 
-main {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-  background: #fff;
-  border-radius: 5px;
+nav ul li a:hover {
+    color: #f1c40f;
 }
 
-h1, h2, h3 {
-  font-weight: normal;
+/* Sección Principal */
+.hero {
+    padding: 100px 20px;
+    background: #3498db;
+    color: white;
 }
 
-section {
-  margin: 2rem 0;
+.hero h2 {
+    font-size: 2.5em;
 }
 
-footer p {
-  margin: 0;
+.hero p {
+    font-size: 1.2em;
 }
 
-/* Ajusta más estilos según tus preferencias */
+/* Cursos */
+#cursos {
+    padding: 50px 20px;
+    background: white;
+}
+
+#cursos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.cursos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Tarjeta de Curso */
+.curso-card {
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.curso-card:hover {
+    transform: scale(1.05);
+}
+
+.curso-card h3 {
+    color: #2c3e50;
+}
+
+.curso-card p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Botón */
+.btn {
+    display: inline-block;
+    background: #27ae60;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #2ecc71;
+}
+
+/* Contacto */
+#contacto {
+    padding: 50px 20px;
+    background: #34495e;
+    color: white;
+}
+
+#contacto a {
+    color: #f1c40f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contacto a:hover {
+    color: #fff;
+}
+
+/* Pie de página */
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
