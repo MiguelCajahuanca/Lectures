@@ -3,45 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Cursos</title>
+    <title>Cursos de Física y Matemáticas</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <!-- Menú de navegación superior -->
+    <!-- Navegación superior -->
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#cursos">Cursos</a>
-        <a href="#contacto">Contacto</a>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
     </nav>
 
     <!-- Encabezado con el nombre -->
     <header>
         <h1>Nombre del Profesor</h1>
-        <p>Investigación | Docencia | Apuntes</p>
+        <p>Investigación | Docencia | Material Académico</p>
     </header>
 
     <!-- Sección de cursos -->
     <section id="cursos">
         <h2>Cursos</h2>
-        <p>Aquí puedes encontrar mis apuntes y materiales de estudio.</p>
-        <ul>
-            <li>📘 <b>Mecánica Clásica</b> – <a href="docs/mecanica.pdf">Apuntes en PDF</a></li>
-            <li>📗 <b>Electromagnetismo</b> – <a href="docs/electromagnetismo.pdf">Apuntes en PDF</a></li>
-            <li>📕 <b>Mecánica Cuántica</b> – <a href="docs/mecanica_cuantica.pdf">Apuntes en PDF</a></li>
-            <li>📙 <b>Relatividad</b> – <a href="docs/relatividad.pdf">Apuntes en PDF</a></li>
-        </ul>
+        <p>Aquí puedes encontrar mis apuntes y materiales de estudio en formato PDF.</p>
+
+        <table>
+            <tr>
+                <th>Curso</th>
+                <th>Descripción</th>
+                <th>Enlace</th>
+            </tr>
+            <tr>
+                <td>📘 Mecánica Clásica</td>
+                <td>Fundamentos de la dinámica, leyes de Newton y sistemas de referencia.</td>
+                <td><a href="docs/mecanica.pdf">📄 Descargar</a></td>
+            </tr>
+            <tr>
+                <td>📗 Electromagnetismo</td>
+                <td>Ecuaciones de Maxwell, ondas electromagnéticas y aplicaciones.</td>
+                <td><a href="docs/electromagnetismo.pdf">📄 Descargar</a></td>
+            </tr>
+            <tr>
+                <td>📕 Mecánica Cuántica</td>
+                <td>Principios fundamentales, funciones de onda y operadores cuánticos.</td>
+                <td><a href="docs/mecanica_cuantica.pdf">📄 Descargar</a></td>
+            </tr>
+            <tr>
+                <td>📙 Relatividad</td>
+                <td>Teoría de la relatividad especial y general, espacio-tiempo y cosmología.</td>
+                <td><a href="docs/relatividad.pdf">📄 Descargar</a></td>
+            </tr>
+        </table>
     </section>
 
     <!-- Sección de contacto -->
     <section id="contacto">
         <h2>Contacto</h2>
+        <p>Para consultas o colaboraciones, contáctame en:</p>
         <p>Email: <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></p>
     </section>
 
     <!-- Pie de página -->
     <footer>
-        <p>&copy; 2025 Nombre del Profesor</p>
+        <p>&copy; 2025 Nombre del Profesor | Todos los derechos reservados.</p>
     </footer>
 
 </body>
