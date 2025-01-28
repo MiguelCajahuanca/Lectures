@@ -1,73 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos de Física y Matemáticas</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Sitio Personal</title>
+  <!-- Vinculamos con nuestro archivo style.css -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Barra de navegación fija a la izquierda -->
+  <nav>
+    <h2 class="nav-title">Mi Nombre</h2>
+    <ul>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#publicaciones">Publicaciones</a></li>
+      <li><a href="#notas">Notas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <!-- Ejemplo de enlace externo: CV en PDF -->
+      <li><a href="CV.pdf" target="_blank">CV</a></li>
+    </ul>
+  </nav>
 
-    <!-- Navegación superior -->
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#cursos">Cursos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-
-    <!-- Encabezado con el nombre -->
+  <!-- Contenedor principal (contenido a la derecha de la barra) -->
+  <div class="container">
+    <!-- Título principal -->
     <header>
-        <h1>Nombre del Profesor</h1>
-        <p>Investigación | Docencia | Material Académico</p>
+      <h1>Mi Nombre Completo</h1>
+      <p class="subheader">Descripción breve o cargo, por ejemplo:<br>
+         "Físico Teórico en X Universidad" o "Desarrollador Web en XYZ". 
+      </p>
     </header>
 
-    <!-- Sección de cursos -->
-    <section id="cursos">
-        <h2>Cursos</h2>
-        <p>Aquí puedes encontrar mis apuntes y materiales de estudio en formato PDF.</p>
-
-        <table>
-            <tr>
-                <th>Curso</th>
-                <th>Descripción</th>
-                <th>Enlace</th>
-            </tr>
-            <tr>
-                <td>📘 Mecánica Clásica</td>
-                <td>Fundamentos de la dinámica, leyes de Newton y sistemas de referencia.</td>
-                <td><a href="docs/mecanica.pdf">📄 Descargar</a></td>
-            </tr>
-            <tr>
-                <td>📗 Electromagnetismo</td>
-                <td>Ecuaciones de Maxwell, ondas electromagnéticas y aplicaciones.</td>
-                <td><a href="docs/electromagnetismo.pdf">📄 Descargar</a></td>
-            </tr>
-            <tr>
-                <td>📕 Mecánica Cuántica</td>
-                <td>Principios fundamentales, funciones de onda y operadores cuánticos.</td>
-                <td><a href="docs/mecanica_cuantica.pdf">📄 Descargar</a></td>
-            </tr>
-            <tr>
-                <td>📙 Relatividad</td>
-                <td>Teoría de la relatividad especial y general, espacio-tiempo y cosmología.</td>
-                <td><a href="docs/relatividad.pdf">📄 Descargar</a></td>
-            </tr>
-        </table>
+    <!-- Sección "Sobre mí" -->
+    <section id="sobre-mi" class="section">
+      <h2>Sobre mí</h2>
+      <p>
+        Aquí puedes describir tu formación, intereses, proyectos en los que trabajas
+        o cualquier detalle que quieras destacar. Por ejemplo:
+      </p>
+      <ul>
+        <li>Investigador en [tema de investigación].</li>
+        <li>Desarrollo de proyectos de software/hardware.</li>
+        <li>Tengo experiencia en lenguajes como Python, C++, etc.</li>
+      </ul>
     </section>
 
-    <!-- Sección de contacto -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Para consultas o colaboraciones, contáctame en:</p>
-        <p>Email: <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></p>
+    <!-- Sección "Publicaciones" -->
+    <section id="publicaciones" class="section">
+      <h2>Publicaciones Destacadas</h2>
+      <ul>
+        <li>
+          <strong>Título de la Publicación</strong> – 
+          <em>Revista / Conferencia (año)</em><br>
+          Breve descripción o enlace: <a href="#">[Enlace a la publicación]</a>
+        </li>
+        <li>
+          <strong>Título de la Publicación</strong> – 
+          <em>Revista / Conferencia (año)</em><br>
+          Breve descripción o enlace: <a href="#">[Enlace a la publicación]</a>
+        </li>
+      </ul>
+      <p>
+        Puedes listar más publicaciones o enlazar a una página separada con el 
+        historial completo:
+        <br>
+        <a href="#">Ver todas las publicaciones</a>
+      </p>
     </section>
 
-    <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2025 Nombre del Profesor | Todos los derechos reservados.</p>
-    </footer>
+    <!-- Sección "Notas" o "Blog" -->
+    <section id="notas" class="section">
+      <h2>Notas / Blog</h2>
+      <p>
+        Aquí puedes poner entradas de blog, apuntes o artículos de interés:
+      </p>
+      <ul>
+        <li>
+          <strong>Título de la Nota</strong> – 
+          <a href="#">[Enlace a la nota o artículo]</a>
+        </li>
+        <li>
+          <strong>Título de la Nota</strong> – 
+          <a href="#">[Enlace a la nota o artículo]</a>
+        </li>
+      </ul>
+    </section>
 
+    <!-- Sección "Contacto" -->
+    <section id="contacto" class="section">
+      <h2>Contacto</h2>
+      <p>
+        Correo: <a href="mailto:tu-correo@ejemplo.com">tu-correo@ejemplo.com</a><br>
+        GitHub: <a href="https://github.com/tuusuario" target="_blank">@tuusuario</a><br>
+        Twitter: <a href="https://twitter.com/tuusuario" target="_blank">@tuusuario</a>
+      </p>
+    </section>
+  </div>
 </body>
 </html>
