@@ -1,3 +1,8 @@
+/* 
+  Hoja de estilos para un sitio académico en modo claro.
+  Usamos Merriweather para títulos y Open Sans para texto.
+*/
+
 /* Reinicio básico */
 * {
   margin: 0;
@@ -5,39 +10,51 @@
   box-sizing: border-box;
 }
 
+/* Tipografías generales */
 body {
-  font-family: "Helvetica", "Arial", sans-serif;
-  background-color: #fff; /* Fondo blanco */
-  color: #333;            /* Texto gris oscuro */
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fbfbfb;
+  color: #2b2b2b;
   line-height: 1.6;
 }
 
-/* Encabezado y menú de navegación */
+/* Encabezados (usamos Merriweather) */
+h1, h2, h3, h4, h5 {
+  font-family: 'Merriweather', serif;
+}
+
+/* Encabezado del sitio */
 .site-header {
-  background-color: #fff;
+  background-color: #ffffff;
   border-bottom: 1px solid #ddd;
-  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
   position: fixed;
-  width: 100%;
   top: 0;
-  z-index: 999;
+  width: 100%;
+  z-index: 1000;
 }
 
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.logo h1 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin: 0;
+.brand h1 {
+  margin-bottom: 0.2rem;
+  font-size: 1.6rem;
 }
 
+.affiliation {
+  font-size: 0.9rem;
+  color: #555;
+  margin-left: 2px;
+}
+
+/* Menú principal */
 .main-nav ul {
   list-style: none;
   display: flex;
@@ -46,128 +63,154 @@ body {
 
 .main-nav a {
   text-decoration: none;
-  color: #555;
-  font-weight: 500;
+  color: #333;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  transition: background-color 0.2s;
 }
 
 .main-nav a:hover {
-  color: #000;
+  background-color: #f0f0f0;
+  border-radius: 4px;
 }
 
-/* Espacio superior para que el contenido no quede debajo del header fijo */
+/* Para que el contenido no se oculte detrás del header fijo */
 .main-content {
-  padding-top: 80px; /* Ajustar según la altura del header */
+  margin-top: 80px; /* Ajustar según altura del header */
 }
 
-/* Sección principal (hero) */
+/* Hero Section */
 .hero-section {
+  background-color: #fff;
   padding: 2rem 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
 }
 
-/* Columna izquierda: imagen, nombre, íconos */
-.hero-left {
-  flex: 1 1 250px;
-  max-width: 300px;
-  text-align: center;
-}
-
-.profile-pic img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+.hero-image img {
+  max-width: 250px;
   border-radius: 50%;
+  object-fit: cover;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h2 {
+  font-size: 1.8rem;
   margin-bottom: 1rem;
+  color: #222;
 }
 
-.hero-name {
-  font-size: 1.5rem;
+.hero-text p {
   margin-bottom: 1rem;
+  color: #444;
 }
 
-.social-icons a {
-  text-decoration: none;
-  color: #777;
-  margin: 0 0.5rem;
-  font-size: 1.2rem;
-}
-.social-icons a:hover {
-  color: #000;
-}
-
-/* Columna derecha: biografía */
-.hero-right {
-  flex: 1 1 400px;
-}
-
-/* Sección de Papers */
-.papers-section {
+/* Sección de Publicaciones */
+.publications-section {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-.papers-section h2 {
-  font-size: 2rem;
+.publications-section h2 {
+  font-size: 1.6rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid #eee;
   padding-bottom: 0.5rem;
 }
 
+/* Tarjeta de Paper */
 .paper-card {
-  background-color: #f9f9f9;
+  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 6px;
-  padding: 1rem;
   margin-bottom: 1.5rem;
+  padding: 1rem;
+  position: relative;
 }
 
-.paper-meta {
-  font-size: 0.9rem;
-  color: #666;
+.paper-header {
   margin-bottom: 0.5rem;
 }
 
 .paper-title {
   font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: #222;
+}
+
+.paper-authors {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.paper-links {
   margin-bottom: 0.5rem;
 }
 
-.paper-abstract {
-  margin-bottom: 0.5rem;
-}
-
-.paper-links a {
+.paper-link {
   display: inline-block;
-  margin-right: 0.5rem;
+  text-decoration: none;
   background-color: #eee;
   color: #333;
   padding: 0.3rem 0.6rem;
   border-radius: 4px;
-  font-size: 0.85rem;
-  text-decoration: none;
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+  transition: background-color 0.2s;
 }
 
-.paper-links a:hover {
+.paper-link:hover {
   background-color: #ddd;
 }
 
+/* Resumen oculto */
+.paper-abstract {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 0.5rem;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+/* Clase que oculta el resumen */
+.hidden {
+  display: none;
+}
+
+/* Botón para mostrar/ocultar resumen */
+.toggle-abstract-btn {
+  cursor: pointer;
+  background-color: #0069d9;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  transition: background-color 0.2s;
+}
+
+.toggle-abstract-btn:hover {
+  background-color: #0056b3;
+}
+
 /* Secciones extra */
-.extra-section {
+.teaching-section, .notes-section, .contact-section {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-.extra-section h2 {
-  font-size: 1.5rem;
+.teaching-section h2, .notes-section h2, .contact-section h2 {
+  font-size: 1.6rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid #eee;
   padding-bottom: 0.5rem;
@@ -176,8 +219,9 @@ body {
 /* Footer */
 .site-footer {
   text-align: center;
-  padding: 1rem;
-  color: #888;
-  background-color: #fafafa;
+  background-color: #f8f8f8;
+  color: #666;
   border-top: 1px solid #ddd;
+  padding: 1rem 0;
+  margin-top: 2rem;
 }
