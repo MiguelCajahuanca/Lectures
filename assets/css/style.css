@@ -1,156 +1,88 @@
-/* Estilos Generales */
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Georgia", serif;
+    color: #333;
+    background: #ffffff;
+    text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    text-align: center;
+    line-height: 1.6;
 }
 
-/* Barra de navegación */
-header {
-    background: #2c3e50;
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
+/* Navegación */
 nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 20px;
+    justify-content: center;
+    padding: 10px;
+    font-size: 1.1em;
 }
 
-nav h1 {
-    color: white;
-    font-size: 1.5em;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
+nav a {
     text-decoration: none;
-    color: white;
-    font-size: 1.2em;
+    color: #333;
+    margin: 0 15px;
     transition: 0.3s;
 }
 
-nav ul li a:hover {
-    color: #f1c40f;
+nav a:hover {
+    color: #0077cc;
 }
 
-/* Sección Principal */
-.hero {
-    padding: 100px 20px;
-    background: #3498db;
-    color: white;
+/* Encabezado */
+header {
+    margin-top: 50px;
 }
 
-.hero h2 {
-    font-size: 2.5em;
+h1 {
+    font-size: 2.8em;
+    font-weight: normal;
 }
 
-.hero p {
+header p {
     font-size: 1.2em;
+    color: #666;
 }
 
-/* Cursos */
-#cursos {
-    padding: 50px 20px;
-    background: white;
+/* Sección de cursos */
+section {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
 }
 
-#cursos h2 {
-    font-size: 2em;
+h2 {
+    font-size: 1.8em;
+    font-weight: normal;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
     margin-bottom: 20px;
 }
 
-.cursos-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1100px;
-    margin: auto;
+/* Lista de cursos */
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Tarjeta de Curso */
-.curso-card {
-    background: #ecf0f1;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
 }
 
-.curso-card:hover {
-    transform: scale(1.05);
-}
-
-.curso-card h3 {
-    color: #2c3e50;
-}
-
-.curso-card p {
-    font-size: 1em;
-    color: #555;
-}
-
-/* Botón */
-.btn {
-    display: inline-block;
-    background: #27ae60;
-    color: white;
-    padding: 10px 15px;
+/* Enlaces */
+a {
+    color: #0077cc;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    font-size: 1em;
-    transition: 0.3s;
 }
 
-.btn:hover {
-    background: #2ecc71;
-}
-
-/* Contacto */
-#contacto {
-    padding: 50px 20px;
-    background: #34495e;
-    color: white;
-}
-
-#contacto a {
-    color: #f1c40f;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#contacto a:hover {
-    color: #fff;
+a:hover {
+    text-decoration: underline;
 }
 
 /* Pie de página */
 footer {
-    background: #2c3e50;
-    color: white;
-    padding: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #777;
 }
