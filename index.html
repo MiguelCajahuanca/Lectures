@@ -3,97 +3,154 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apuntes de Física Teórica</title>
+  <title>Miguel Cajahuanca</title>
+  
+  <!-- Fuentes de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Merriweather:wght@400;700&display=swap" 
+    rel="stylesheet"
+  >
+  
+  <!-- Hoja de estilos -->
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Iconos -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-  <!-- Navegación Principal -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#mecanica-clasica">Mecánica Clásica</a></li>
-        <li><a href="#electrodinamica">Electrodinámica</a></li>
-        <li><a href="#mecanica-cuantica">Mecánica Cuántica</a></li>
-        <!-- Agrega más capítulos según sea necesario -->
-      </ul>
-    </nav>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand">
+        <h1>Miguel Cajahuanca</h1>
+        <p>Candidato a Doctor en Física</p>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#apuntes">Apuntes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Contenido Principal -->
+  <!-- MAIN CONTENT -->
   <main>
-
-    <!-- Capítulo: Mecánica Clásica -->
-    <section id="mecanica-clasica" class="chapter">
-      <h2>Mecánica Clásica</h2>
-
-      <!-- Lecciones -->
-      <div class="accordion">
-        <div class="accordion-header">Lecciones</div>
-        <div class="accordion-content">
-          <ul>
-            <li><a href="#">Lección 1: Introducción a la Mecánica Clásica</a></li>
-            <li><a href="#">Lección 2: Leyes de Newton</a></li>
-            <!-- Agrega más lecciones según sea necesario -->
-          </ul>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h2>Bienvenido(a)</h2>
+          <p>
+            Soy Miguel Cajahuanca, candidato a doctor en ciencias con mención en Física. 
+            Actualmente, mi investigación se centra en el estudio profundo de los Sistemas Biológicos. 
+            Mi trabajo abarca modelos epidemiológicos, evolución y sistemas complejos.
+          </p>
+          <a href="#contacto" class="btn-primary">Contáctame</a>
+        </div>
+        <div class="hero-image">
+          <img src="assets/img/IMG_99.png" alt="Foto de perfil">
         </div>
       </div>
+    </section>
 
-      <!-- Seminarios -->
-      <div class="accordion">
-        <div class="accordion-header">Seminarios</div>
-        <div class="accordion-content">
-          <ul>
-            <li><a href="#">Seminario 1: Problemas de Dinámica</a></li>
-            <!-- Agrega más seminarios según sea necesario -->
-          </ul>
-        </div>
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="about-section section-container">
+      <div class="section-header">
+        <h2>Sobre mí</h2>
       </div>
-
-      <!-- Pruebas -->
-      <div class="accordion">
-        <div class="accordion-header">Pruebas</div>
-        <div class="accordion-content">
-          <ul>
-            <li><a href="#">Prueba 1: Cinemática</a></li>
-            <!-- Agrega más pruebas según sea necesario -->
-          </ul>
-        </div>
+      <div class="about-content">
+        <p>
+          Soy candidato a Doctor en la Universidad de Santiago de Chile, con un sólido trasfondo en Física 
+          Teórica Nuclear adquirido en la Universidad de Investigaciones Nucleares de Moscú ("MEPhI").
+          Mi investigación abarca modelos epidemiológicos, sistemas complejos y dinámica evolutiva.
+        </p>
       </div>
-
     </section>
 
-    <!-- Capítulo: Electrodinámica -->
-    <section id="electrodinamica" class="chapter">
-      <h2>Electrodinámica</h2>
-      <!-- Estructura similar a la anterior -->
+    <!-- Apuntes -->
+<section id="Apuntes" class="teaching-section">
+
+  <div class="accordion-container">
+    <div class="section-header">
+        <h2>Apuntes</h2>
+        <p>Materiales y notas de mis clases en pregrado y postgrado.</p>
+      </div>
+    <!-- Pregrado -->
+    <div class="accordion">
+      <div class="accordion-header"><h2>Pregrado</h2></div>
+      <div class="accordion-content">
+        <ul>
+          <li><a href="cursos/mecanica_clasica.html">Mecánica Clásica</a></li>
+          <li><a href="cursos/fisica_estadistica.html">Física Estadística</a></li>
+          <li><a href="#">Electrodinámica</a></li>
+          <li><a href="#">Mecánica Cuántica</a></li>
+          <li><a href="#">Relatividad Especial</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Postgrado -->
+    <div class="accordion">
+      <div class="accordion-header"><h2>Postgrado</h2></div>
+      <div class="accordion-content">
+        <ul>
+            <li><a href="cursos/fisica_fuera_del_equilibrio.html">Física Estadística</a></li>
+          <li><a href="#">Sistemas Complejos</a></li>
+          <li><a href="#">Modelos Epidemiológicos</a></li>
+          <li><a href="#">Biología Matemática</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact-section section-container">
+      <div class="section-header">
+        <h2>Contacto</h2>
+        <p>¿Interesado en colaborar o en saber más? ¡Escríbeme!</p>
+      </div>
+      <div class="contact-content">
+        <p>
+          <strong>Correo:</strong> <a href="mailto:miguel.cajahuanca@usach.cl">miguel.cajahuanca@usach.cl</a><br>
+          <strong>GitHub:</strong> <a href="https://github.com/tuusuario">@tuusuario</a><br>
+          <strong>Google Scholar:</strong> <a href="#">Enlace Scholar</a>
+        </p>
+        <a href="mailto:miguel.cajahuanca@usach.cl" class="btn-secondary">Enviar Correo</a>
+      </div>
     </section>
-
-    <!-- Capítulo: Mecánica Cuántica -->
-    <section id="mecanica-cuantica" class="chapter">
-      <h2>Mecánica Cuántica</h2>
-      <!-- Estructura similar a la anterior -->
-    </section>
-
-    <!-- Agrega más capítulos según sea necesario -->
-
   </main>
 
-  <!-- Pie de Página -->
-  <footer>
-    <p>&copy; 2025 Apuntes de Física Teórica - Todos los derechos reservados.</p>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Miguel Cajahuanca - Todos los derechos reservados.</p>
   </footer>
 
-  <!-- Script para el funcionamiento del acordeón -->
+  <!-- Scripts -->
   <script>
+    // Interactividad básica: Acordeón para secciones de Docencia
     document.querySelectorAll('.accordion-header').forEach(header => {
       header.addEventListener('click', () => {
         const content = header.nextElementSibling;
-        content.classList.toggle('expanded');
-        content.style.maxHeight = content.classList.contains('expanded') ? content.scrollHeight + "px" : null;
+        const isExpanded = content.classList.contains('expanded');
+        
+        document.querySelectorAll('.accordion-content').forEach(section => {
+          section.classList.remove('expanded');
+          section.style.maxHeight = null;
+        });
+
+        if (!isExpanded) {
+          content.classList.add('expanded');
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
       });
     });
   </script>
-
 </body>
 </html>
